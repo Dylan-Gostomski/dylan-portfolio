@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Header with name effect */
+header {
+    background: linear-gradient(to right, #4a90e2, #50e3c2);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow effect */
+    transition: transform 0.3s ease-in-out;
+}
+
+header h1:hover {
+    transform: scale(1.1); /* Slight scaling effect on hover */
+}
+
+/* Navigation Styling with Drop Shadow */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Drop shadow for separation */
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+/* Section Styling */
+section {
+    padding: 20px;
+    margin: 10px 0;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Portfolio Hover Effects */
+.portfolio-item {
+    margin: 15px 0;
+    transition: transform 0.3s;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: opacity 0.3s;
+}
+
+.portfolio-item:hover img {
+    opacity: 0.9;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #4a90e2;
+    outline: none;
+}
+
+form input:invalid, form textarea:invalid {
+    border-color: #e74c3c;
+}
+
+form button {
+    padding: 10px;
+    background: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form button:hover {
+    background: #50e3c2;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    form {
+        width: 100%;
+    }
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.image-gallery img {
+    width: 30%; /* Set a fixed width for all images */
+    height: auto; /* Maintain aspect ratio for portrait images */
+    border-radius: 8px; /* Optional: for rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: for shadow effect */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    max-height: 200px; /* Set a max height for consistency */
+}
