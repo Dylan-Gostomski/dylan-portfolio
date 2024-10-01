@@ -69,6 +69,41 @@ h2 {
     font-family: 'Roboto', sans-serif;
 }
 
+/* About Section */
+#about {
+    background-color: #e7f3fe;
+}
+
+#about h2 {
+    color: #4a90e2;
+}
+
+#about p strong {
+    color: #d85c29;
+}
+
+/* Learning Section */
+#learning {
+    background-color: #f4f4f4;
+}
+
+#learning h2 {
+    color: #4a90e2;
+}
+
+/* Images Section */
+#images {
+    background-color: #e7f3fe;
+}
+
+#images h2 {
+    color: #4a90e2;
+}
+
+.image-gallery img {
+    max-width: 200px; /* Set a fixed width for images */
+}
+
 /* Portfolio Hover Effects */
 .portfolio-item {
     margin: 15px 0;
@@ -100,7 +135,8 @@ form label {
     margin: 10px 0 5px;
 }
 
-form input, form textarea {
+form input,
+form textarea {
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ddd;
@@ -108,12 +144,14 @@ form input, form textarea {
     transition: border-color 0.3s;
 }
 
-form input:focus, form textarea:focus {
+form input:focus,
+form textarea:focus {
     border-color: #4a90e2;
     outline: none;
 }
 
-form input:invalid, form textarea:invalid {
+form input:invalid,
+form textarea:invalid {
     border-color: #e74c3c;
 }
 
@@ -146,13 +184,40 @@ footer p {
 
 /* Media Queries for Mobile Responsiveness */
 @media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem; /* Reduced font size for mobile */
+    }
+
     nav ul li {
-        display: block;
-        margin: 10px 0;
+        display: block; /* Stack navigation items */
+        margin: 10px 0; /* Increased margin for better spacing */
+    }
+
+    nav ul {
+        padding: 10px 0; /* Added padding for mobile */
+    }
+
+    section {
+        padding: 15px; /* Reduced padding for smaller screens */
+        margin: 5px 0; /* Reduced margin */
+    }
+
+    .portfolio-item {
+        margin: 10px 0; /* Adjust margin for portfolio items */
     }
 
     form {
-        width: 100%;
+        width: 100%; /* Make form full width */
+    }
+
+    .image-gallery {
+        flex-direction: column; /* Stack images vertically on small screens */
+        align-items: center; /* Center align images */
+    }
+
+    .image-gallery img {
+        width: 80%; /* Set a width for mobile */
+        max-height: 200px; /* Maintain max height for images */
     }
 }
 
@@ -169,4 +234,9 @@ footer p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: for shadow effect */
     object-fit: cover; /* Ensures the image covers the area without distortion */
     max-height: 200px; /* Set a max height for consistency */
+}
+
+/* Contact Section */
+#contact h2 {
+    color: #333; /* Default heading color */
 }
