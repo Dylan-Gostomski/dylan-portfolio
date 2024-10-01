@@ -100,8 +100,21 @@ h2 {
     color: #4a90e2;
 }
 
+.image-gallery {
+    display: flex;
+    justify-content: space-between; /* Distribute space between images */
+    margin: 20px 0;
+    flex-wrap: wrap; /* Allow images to wrap to the next line on smaller screens */
+}
+
 .image-gallery img {
-    max-width: 200px; /* Set a fixed width for images */
+    width: calc(33% - 10px); /* Set width for images, subtracting space for margins */
+    height: auto; /* Maintain aspect ratio for portrait images */
+    border-radius: 8px; /* Optional: for rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: for shadow effect */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    max-height: 200px; /* Set a max height for consistency */
+    margin-bottom: 10px; /* Add space below each image */
 }
 
 /* Portfolio Hover Effects */
@@ -221,19 +234,10 @@ footer p {
     }
 }
 
-.image-gallery {
-    display: flex;
-    justify-content: space-around;
-    margin: 20px 0;
-}
-
-.image-gallery img {
-    width: 30%; /* Set a fixed width for all images */
-    height: auto; /* Maintain aspect ratio for portrait images */
-    border-radius: 8px; /* Optional: for rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: for shadow effect */
-    object-fit: cover; /* Ensures the image covers the area without distortion */
-    max-height: 200px; /* Set a max height for consistency */
+@media (max-width: 480px) {
+    .image-gallery img {
+        width: 100%; /* Full width for mobile */
+    }
 }
 
 /* Contact Section */
