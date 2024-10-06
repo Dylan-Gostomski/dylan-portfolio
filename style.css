@@ -230,7 +230,7 @@ footer p {
 
     .image-gallery img {
         width: 80%; /* Set a width for mobile */
-        max-height: 200px; /* Maintain max height for images */
+        max-height: 400px; /* Maintain max height for images */
     }
 }
 
