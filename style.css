@@ -113,7 +113,7 @@ h2 {
     border-radius: 8px; /* Optional: for rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: for shadow effect */
     object-fit: cover; /* Ensures the image covers the area without distortion */
-    max-height: 200px; /* Set a max height for consistency */
+    max-height: 400px; /* Set a max height for consistency */
     margin-bottom: 10px; /* Add space below each image */
 }
 
@@ -230,7 +230,7 @@ footer p {
 
     .image-gallery img {
         width: 80%; /* Set a width for mobile */
-        max-height: 400px; /* Maintain max height for images */
+        max-height: 200px; /* Maintain max height for images */
     }
 }
 
