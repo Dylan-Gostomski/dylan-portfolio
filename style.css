@@ -113,7 +113,7 @@ h2 {
     border-radius: 8px; /* Optional: for rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: for shadow effect */
     object-fit: cover; /* Ensures the image covers the area without distortion */
-    max-height: 400px; /* Set a max height for consistency */
+    max-height: 600px; /* Set a max height for consistency */
     margin-bottom: 10px; /* Add space below each image */
 }
 
